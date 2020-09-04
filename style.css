@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F2F5;
+}
+
+@font-face {
+    font-family: 'facebook';
+    src: url('../login-face/fonts/facebolf-webfont.woff') format('woff2'),
+         url('../login-face/fonts/facebolf-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-gap: 10px;
+}
+
+.left {
+    grid-area: left;
+    min-height: 100vh;
+}
+
+.right {
+    grid-area: right;
+}
+
+.face {
+    margin-top: 31%;
+    margin-left: 7%;
+    width: 300px;
+    height: 105px;
+}
+
+.face-description {
+    font-family: 'SFProDisplay-Regular, Helvetica, Arial, sans-serif';
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    padding-left: 13%;
+    color: #1c1e21;
+    margin-top: -14px;
+
+}
+
+.login {
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    color: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 356px;
+    height: 330px;
+    margin-top: 24%;
+    margin-left: 79px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+}
+
+input {
+    width: 91%;
+    height: 52px;
+    margin: 3% 4.5% auto 4.5%;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+input:focus {
+    outline: 0;
+    background-color: #e8f0fe;
+}
+
+input::placeholder {
+    color: #aaa;
+    font-size: 15px;
+}
+
+input[type=submit]{
+    color: #fff;
+    background-color: #1877f2;
+    cursor: pointer;
+}
+
+.recuperation {
+    margin: 1rem;
+    color: #1877f2;
+}
+
+hr {
+    margin: 1px 4.5%;
+}
+
+.newAccount {
+    font-family: inherit;
+}
+.submit {
+    margin: 23px 30%;
+    height: 39px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background-color: #42b72a;
+    width: 40%;
+    cursor: pointer
+}
+
+.submit:hover {
+    background-color: #3ba026;
+}
+
+.submit:focus {
+    outline: 0;
+    background-color: #328a20;
+}
+
+.pageEspecial {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 20%;
+    color: #000
+}
+
+.pageEspecial a {
+    text-decoration: none;
+    color: #000;
+}
